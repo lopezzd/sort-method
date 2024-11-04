@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --code-bg-color: #f8f8f8;
+  --red-bg-color: #e74c3c;
+  --green-bg-color: #2ecc71;
+  --yellow-bg-color: #f39c12;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 10px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+p,
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+ul,
+ol {
+  padding-left: 25px;
+}
+code {
+  background-color: var(--code-bg-color);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-size: 0.9em;
+  padding: 2px 4px;
+}
+pre {
+  background-color: var(--code-bg-color);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.importante,
+.dica {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+  color: white;
+}
+.importante {
+  background-color: var(--red-bg-color);
+}
+.dica {
+  background-color: var(--green-bg-color);
+}
+.algoritmo {
+  background-color: var(--yellow-bg-color);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.recursive{
+  background-color: var(--red-bg-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .container {
+    padding: 10px;
+  }
+}
