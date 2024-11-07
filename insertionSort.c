@@ -17,12 +17,12 @@ void insertionSort(int arr[], int n) {
 }
 
 void printArray(int arr[], int n) {
-	if(n < 20) {
-		for (int i = 0; i < n; i++) {
-			printf("%d ", arr[i]);
-		}
-		printf("\n");
-	}
+	if(n >= 20) return;
+
+    for (int i = 0; i < n; i++) {
+    printf("%d ", arr[i]);
+    }
+    printf("\n");
 }
 
 int main() {
