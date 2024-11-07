@@ -24,14 +24,18 @@ void selectionSort(int arr[], int n) {
 }
 
 void printArray(int arr[], int n) {
-	for (int i = 0; i < n; i++) {
-		printf("%d ", arr[i]);
+	if(n < 20) {
+		for (int i = 0; i < n; i++) {
+			printf("%d ", arr[i]);
+		}
+		printf("\n");
 	}
-	printf("\n");
 }
 
 int main() {
-	int arr[10];
+    setlocale(LC_ALL, "Portuguese");
+    
+	int arr[100000];
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	srand(time(NULL));
@@ -52,11 +56,29 @@ int main() {
 
 	tempo_cpu = ((double) (fim - inicio)) / CLOCKS_PER_SEC;
 
-	printf("Tempo de execuC'C#o: %f segundos\n", tempo_cpu);
+	printf("Tempo de execução: %f segundos\n", tempo_cpu);
 
-	selectionSort(arr, n);
 
 	printArray(arr, n);
+	
+	// Anotações
+	
+	/*
+	Tamanho: 10
+	Tempo: 0,000002 segundos
+	
+	Tamanho: 100
+	Tempo: 0,000019 segundos
+	
+	Tamanho: 1000
+	Tempo: 0,001153 segundos
+	
+	Tamanho: 10000
+	Tempo: 0,116320 segundos
+	
+	Tamanho: 100000
+	Tempo: 12,799901 segundos
+	*/
 
 	return 0;
 }
