@@ -56,6 +56,8 @@ void mergeSort(int arr[], int left, int right) {
 }
 
 void printArray(int arr[], int n) {
+	if(n >= 20) return;
+
 	for (int i = 0; i < n; i++) {
 		printf("%d ", arr[i]);
 	}
@@ -86,9 +88,26 @@ int main() {
 
 	printf("Tempo de execução: %f segundos\n", tempo_cpu);
 
-	mergeSort(arr, 0, n - 1);
-
 	printArray(arr, n);
+
+	// AnotaC'C5es
+
+	/*
+	Tamanho: 10
+	Tempo: 0,000002 segundos
+
+	Tamanho: 100
+	Tempo: 0,000009 segundos
+
+	Tamanho: 1000
+	Tempo: 0,000733 segundos
+
+	Tamanho: 10000
+	Tempo: 0,060799 segundos
+
+	Tamanho: 100000
+	Tempo: 5,505111 segundos
+	*/
 
 	return 0;
 }
