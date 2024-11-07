@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Projeto: Implementação e Análise de Algoritmos de Ordenação em C</h1>
 
         <h2>Introdução</h2>
         <p>Caros alunos,</p>
-        <p>Neste projeto, vocês terão a oportunidade de mergulhar no fascinante mundo dos algoritmos de ordenação. A ordenação é uma operação fundamental na ciência da computação, e entender como diferentes algoritmos funcionam e se comportam é crucial para o desenvolvimento de software eficiente.</p>
+        <p>Neste projeto, vocês terão a oportunidade de mergulhar no fascinante mundo dos algoritmos de ordenação. A
+            ordenação é uma operação fundamental na ciência da computação, e entender como diferentes algoritmos
+            funcionam e se comportam é crucial para o desenvolvimento de software eficiente.</p>
 
         <h2>Objetivo do Projeto</h2>
-        <p>O objetivo principal deste projeto é proporcionar a vocês uma experiência prática com diversos algoritmos de ordenação. Vocês irão:</p>
+        <p>O objetivo principal deste projeto é proporcionar a vocês uma experiência prática com diversos algoritmos de
+            ordenação. Vocês irão:</p>
         <ol>
             <li>Implementar os algoritmos em C</li>
             <li>Medir e comparar seus desempenhos práticos</li>
             <li>Desenvolver habilidades de análise e apresentação de dados</li>
         </ol>
-        <p>Este projeto simulará um cenário do mundo real, onde vocês precisarão não apenas implementar soluções, mas também analisá-las e apresentar seus resultados de forma clara e profissional.</p>
+        <p>Este projeto simulará um cenário do mundo real, onde vocês precisarão não apenas implementar soluções, mas
+            também analisá-las e apresentar seus resultados de forma clara e profissional.</p>
 
         <h2>Tarefas Detalhadas</h2>
 
@@ -33,18 +39,21 @@
             <li>Comente seu código adequadamente para explicar a lógica de cada algoritmo.</li>
         </ul>
         <div class="dica">
-            <strong>Dica:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar para os mais complexos.
+            <strong>Dica:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
+            para os mais complexos.
         </div>
 
         <h3>2. Testes de Performance (30% da nota)</h3>
         <ul>
             <li>Gere conjuntos de dados aleatórios com tamanhos variando de 1 a 100.000 elementos.</li>
             <li>Teste cada algoritmo com os mesmos conjuntos de dados.</li>
-            <li>Use a biblioteca <code>time.h</code> para medir o tempo de execução (veja o exemplo de código no final).</li>
+            <li>Use a biblioteca <code>time.h</code> para medir o tempo de execução (veja o exemplo de código no final).
+            </li>
             <li>Realize testes para pelo menos os seguintes tamanhos de array: 100, 1.000, 10.000, 50.000, 100.000.</li>
         </ul>
         <div class="dica">
-            <strong>Dica:</strong> Para resultados mais confiáveis, execute cada teste várias vezes e use a média dos tempos.
+            <strong>Dica:</strong> Para resultados mais confiáveis, execute cada teste várias vezes e use a média dos
+            tempos.
         </div>
 
         <h3>3. Análise Comparativa (15% da nota)</h3>
@@ -59,7 +68,8 @@
         <ul>
             <li>Crie gráficos comparando o desempenho dos algoritmos.</li>
             <li>Sugestão: use uma ferramenta como GNU Plot, Python (matplotlib) ou R.</li>
-            <li>Inclua pelo menos um gráfico de linha mostrando o tempo de execução vs. tamanho da entrada para todos os algoritmos.</li>
+            <li>Inclua pelo menos um gráfico de linha mostrando o tempo de execução vs. tamanho da entrada para todos os
+                algoritmos.</li>
         </ul>
 
         <h3>5. Relatório (15% da nota)</h3>
@@ -86,40 +96,43 @@
 
         <h2>Algoritmos que foram implementados</h2>
         <ol>
-            <li><span class="algoritmo">Selection Sort</span>: Um algoritmo simples que repetidamente seleciona o menor elemento restante.</li>
-            <li><span class="algoritmo">Insertion Sort</span>: Constrói a lista final um item de cada vez, como organizar cartas de baralho na mão.</li>
-            <li><span class="algoritmo">Bubble Sort</span>: Compara pares adjacentes e os troca se estiverem fora de ordem.</li>
-            <li><span class="algoritmo recursive">Merge Sort</span>: Um algoritmo eficiente que divide a lista, ordena as partes e depois as mescla.</li>
-            <li><span class="algoritmo recursive">Quick Sort</span>: Um algoritmo rápido que usa a estratégia de dividir e conquistar.</li>
-            <li><span class="algoritmo recursive">Heap Sort</span>: Utiliza uma estrutura de dados chamada heap para ordenar os elementos.</li>
+            <li><span class="algoritmo">Selection Sort</span>: Um algoritmo simples que repetidamente seleciona o menor
+                elemento restante.</li>
+            <li><span class="algoritmo">Insertion Sort</span>: Constrói a lista final um item de cada vez, como
+                organizar cartas de baralho na mão.</li>
+            <li><span class="algoritmo">Bubble Sort</span>: Compara pares adjacentes e os troca se estiverem fora de
+                ordem.</li>
+            <li><span class="algoritmo recursive">Merge Sort</span>: Um algoritmo eficiente que divide a lista, ordena
+                as partes e depois as mescla.</li>
+            <li><span class="algoritmo recursive">Quick Sort</span>: Um algoritmo rápido que usa a estratégia de dividir
+                e conquistar.</li>
+            <li><span class="algoritmo recursive">Heap Sort</span>: Utiliza uma estrutura de dados chamada heap para
+                ordenar os elementos.</li>
         </ol>
 
         <h2>Selection Sort</h2>
         <p>Para medir o tempo de execução, use o seguinte template:</p>
-        <pre><code>#include &lt;stdio.h&gt;
-#include &lt;time.h&gt;
+        <pre><code>
+    void swap(int *a, int *b) {
+        int temp = *a;
+        *a = *b;
+        *b = temp;
+    }
 
-void algumAlgoritmoDeOrdenacao(int arr[], int n) {
-    // Implementação do algoritmo aqui
-}
+    void selectionSort(int arr[], int n) {
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
 
-int main() {
-    int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    
-    clock_t inicio, fim;
-    double tempo_cpu;
-    
-    inicio = clock();
-    algumAlgoritmoDeOrdenacao(arr, n);
-    fim = clock();
-    
-    tempo_cpu = ((double) (fim - inicio)) / CLOCKS_PER_SEC;
-    
-    printf("Tempo de execução: %f segundos\n", tempo_cpu);
-    
-    return 0;
-}</code></pre>
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            swap(&arr[minIndex], &arr[i]);
+        }
+    }
+</code></pre>
 
         <h2>Insertion Sort</h2>
         <p>Para sortear números aleatórios, use o seguinte template:</p>
@@ -153,4 +166,5 @@ int main() {
 }</code></pre>
     </div>
 </body>
+
 </html>
