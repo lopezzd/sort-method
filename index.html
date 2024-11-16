@@ -138,6 +138,10 @@ void selectionSort(int arr[], int n) {
         mesmo que o array já esteja ordenado.
       </div>
 
+      <div>
+        <canvas id="selectionChart"></canvas>
+      </div>
+
       <h2>Insertion Sort</h2>
       <p>
         O Insertion Sort constrói a sequência ordenada elemento por elemento.
@@ -170,8 +174,16 @@ void insertionSort(int arr[], int n) {
         ordenados, sua complexidade no pior caso torna-o menos eficiente.
       </div>
 
+      <div>
+        <canvas id="insertionChart"></canvas>
+      </div>
+
       <h2>Bubble Sort</h2>
-      <p>Compara elementos adjacentes e os troca, se necessário, movendo os maiores elementos para o final do array em cada passagem. Ele repete esse processo até que todo o array esteja ordenado.</p>
+      <p>
+        Compara elementos adjacentes e os troca, se necessário, movendo os
+        maiores elementos para o final do array em cada passagem. Ele repete
+        esse processo até que todo o array esteja ordenado.
+      </p>
       <pre><code>
 void bubbleSort(int arr[], int n) {
     int i, j, temp;
@@ -189,15 +201,27 @@ void bubbleSort(int arr[], int n) {
 </code></pre>
 
       <div class="vantagem">
-        <strong>Vantagem:</strong> Esse algoritmo é conhecido por sua simplicidade e por detectar se o array já está ordenado.
+        <strong>Vantagem:</strong> Esse algoritmo é conhecido por sua
+        simplicidade e por detectar se o array já está ordenado.
       </div>
 
       <div class="desvantagem">
-        <strong>Desvantagem:</strong> no pior caso, ele tem alta complexidade, o que o torna muito lento para grandes conjuntos de dados. Além disso, ele realiza muitas trocas desnecessárias, o que reduz sua eficiência.
+        <strong>Desvantagem:</strong> no pior caso, ele tem alta complexidade, o
+        que o torna muito lento para grandes conjuntos de dados. Além disso, ele
+        realiza muitas trocas desnecessárias, o que reduz sua eficiência.
+      </div>
+
+      <div>
+        <canvas id="bubbleChart"></canvas>
       </div>
 
       <h2>Merge Sort</h2>
-      <p>Divide o array em partes menores até que cada parte tenha apenas um elemento. Em seguida, combina essas partes de forma ordenada até reconstruir o array completo. Esse algoritmo é eficiente para grandes conjuntos de dados.</p>
+      <p>
+        Divide o array em partes menores até que cada parte tenha apenas um
+        elemento. Em seguida, combina essas partes de forma ordenada até
+        reconstruir o array completo. Esse algoritmo é eficiente para grandes
+        conjuntos de dados.
+      </p>
       <pre><code>
 void merge(int arr[], int left, int mid, int right) {
     int i, j, k;
@@ -253,15 +277,27 @@ void mergeSort(int arr[], int left, int right) {
 </code></pre>
 
       <div class="vantagem">
-        <strong>Vantagem:</strong> É estável, o que significa que preserva a ordem relativa dos elementos iguais, e pode ser paralelizado devido à sua abordagem de divisão e conquista.
+        <strong>Vantagem:</strong> É estável, o que significa que preserva a
+        ordem relativa dos elementos iguais, e pode ser paralelizado devido à
+        sua abordagem de divisão e conquista.
       </div>
 
       <div class="desvantagem">
-        <strong>Desvantagem:</strong> E requer memória adicional para armazenar os subarrays temporários, tornando-o menos eficiente em termos de uso de espaço.
+        <strong>Desvantagem:</strong> E requer memória adicional para armazenar
+        os subarrays temporários, tornando-o menos eficiente em termos de uso de
+        espaço.
+      </div>
+
+      <div>
+        <canvas id="mergeChart"></canvas>
       </div>
 
       <h2>Quick Sort</h2>
-      <p>Seleciona um elemento como pivô e organiza o array em dois subconjuntos: os elementos menores e maiores que o pivô. Em seguida, aplica recursivamente o mesmo processo em cada subconjunto.</p>
+      <p>
+        Seleciona um elemento como pivô e organiza o array em dois subconjuntos:
+        os elementos menores e maiores que o pivô. Em seguida, aplica
+        recursivamente o mesmo processo em cada subconjunto.
+      </p>
       <pre><code>
 void quicksort(int *arr, int low, int high)
 {
@@ -295,15 +331,29 @@ void quicksort(int *arr, int low, int high)
 }
 </code></pre>
       <div class="vantagem">
-        <strong>Vantagem:</strong> Esse algoritmo é muito rápido na prática, com complexidade média e é eficiente para grandes volumes de dados. Além disso, ele utiliza memória de forma eficiente, pois é um método in-place.
+        <strong>Vantagem:</strong> Esse algoritmo é muito rápido na prática, com
+        complexidade média e é eficiente para grandes volumes de dados. Além
+        disso, ele utiliza memória de forma eficiente, pois é um método
+        in-place.
       </div>
 
       <div class="desvantagem">
-        <strong>Desvantagem:</strong> No entanto, sua estabilidade depende de implementação específica, e no pior caso (quando as partições são muito desbalanceadas), sua complexidade pode ser maior. Uma boa escolha do pivô é essencial para evitar esse cenário.
+        <strong>Desvantagem:</strong> No entanto, sua estabilidade depende de
+        implementação específica, e no pior caso (quando as partições são muito
+        desbalanceadas), sua complexidade pode ser maior. Uma boa escolha do
+        pivô é essencial para evitar esse cenário.
+      </div>
+
+      <div>
+        <canvas id="quickChart"></canvas>
       </div>
 
       <h2>Heap Sort</h2>
-      <p>Constrói uma estrutura de heap (máximo ou mínimo) a partir do array e, em seguida, extrai repetidamente o maior (ou menor) elemento para formar o array ordenado.</p>
+      <p>
+        Constrói uma estrutura de heap (máximo ou mínimo) a partir do array e,
+        em seguida, extrai repetidamente o maior (ou menor) elemento para formar
+        o array ordenado.
+      </p>
       <pre><code>
 void heapify(int arr[], int n, int i) {
 
@@ -347,12 +397,22 @@ void heapSort(int arr[], int n) {
 }
 </code></pre>
       <div class="vantagem">
-        <strong>Vantagem:</strong> Ele garante uma complexidade média independentemente do estado inicial dos dados, o que é uma grande vantagem. Além disso, realiza a ordenação in-place, sem a necessidade de memória adicional.
+        <strong>Vantagem:</strong> Ele garante uma complexidade média
+        independentemente do estado inicial dos dados, o que é uma grande
+        vantagem. Além disso, realiza a ordenação in-place, sem a necessidade de
+        memória adicional.
       </div>
 
       <div class="desvantagem">
-        <strong>Desvantagem:</strong> Por outro lado, o Heap Sort não é estável e, na prática, pode ser um pouco mais lento que o Merge Sort ou o Quick Sort devido à sobrecarga de manipular a estrutura do heap.
+        <strong>Desvantagem:</strong> Por outro lado, o Heap Sort não é estável
+        e, na prática, pode ser um pouco mais lento que o Merge Sort ou o Quick
+        Sort devido à sobrecarga de manipular a estrutura do heap.
+      </div>
+      <div>
+        <canvas id="heapChart"></canvas>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -26,6 +26,8 @@ void printArray(int arr[], int n) {
 	printf("\n");
 }
 
+
+
 int main() {
 	int arr[100000];
 	int n = sizeof(arr) / sizeof(arr[0]);
@@ -52,24 +54,7 @@ int main() {
 
 	printArray(arr, n);
 
-	// AnotaC'C5es
 
-	/*
-	Tamanho: 10
-	Tempo: 0,000002 segundos
-
-	Tamanho: 100
-	Tempo: 0,000026 segundos
-
-	Tamanho: 1000
-	Tempo: 0,002239 segundos
-
-	Tamanho: 10000
-	Tempo: 0,157988 segundos
-
-	Tamanho: 100000
-	Tempo: 27,068663 segundos
-	*/
 
 	return 0;
 }

@@ -65,7 +65,7 @@ void printArray(int arr[], int n) {
 }
 
 int main() {
-	int arr[10];
+	int arr[100000];
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	srand(time(NULL));
@@ -90,24 +90,7 @@ int main() {
 
 	printArray(arr, n);
 
-	// AnotaC'C5es
 
-	/*
-	Tamanho: 10
-	Tempo: 0,000002 segundos
-
-	Tamanho: 100
-	Tempo: 0,000009 segundos
-
-	Tamanho: 1000
-	Tempo: 0,000733 segundos
-
-	Tamanho: 10000
-	Tempo: 0,060799 segundos
-
-	Tamanho: 100000
-	Tempo: 5,505111 segundos
-	*/
 
 	return 0;
 }
