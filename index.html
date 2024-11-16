@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h1>Projeto: Implementação e Análise de Algoritmos de Ordenação em C</h1>
+      <h1>Projeto: Implementação e Análise de Algoritmos de Ordenação em C</h1>
 
-        <h2>Introdução</h2>
-        <p>Projeto feito por João Henrique Lopes Divno, e Luis Eduardo de Melo Miguel, ambos estudantes de Sistemas de Informação na instituição Pontifícia Universidade Católica de Campinas (PUC - Campinas). Projeto proposto pelo professor André Luis dos Reis Gomes de Carvalho que leciona Estrutura e Recuperação de Dados I & Algoritimos e Linguagem de Programação com o objetivo de ampliar nossas habilidades na recém introduzida Linguagem C.</p>
+      <h2>Introdução</h2>
+      <p>
+        Projeto feito por João Henrique Lopes Divno e Luis Eduardo de Melo
+        Miguel, ambos estudantes de Sistemas de Informação na instituição
+        Pontifícia Universidade Católica de Campinas (PUC - Campinas). Projeto
+        proposto pelo professor André Luis dos Reis Gomes de Carvalho que
+        leciona Estrutura e Recuperação de Dados I & Algoritimos e Linguagem de
+        Programação com o objetivo de ampliar nossas habilidades na recém
+        introduzida Linguagem C.
+      </p>
 
-        <h2>Objetivo do Projeto</h2>
-        <p>O objetivo principal deste projeto é proporcionar a experiência prática com diversos algoritmos de
-            ordenação. Foi implementado:</p>
-        <ol>
-            <li>Algoritmos em C</li>
-            <li>Medidas e comparações de desempenhos práticos</li>
-            <li>Análise e apresentação de dados</li>
-        </ol>
+      <h2>Objetivo do Projeto</h2>
+      <p>
+        O objetivo principal deste projeto é proporcionar a experiência prática
+        com diversos algoritmos de ordenação. Foi implementado:
+      </p>
+      <ol>
+        <li>Algoritmos em C</li>
+        <li>Medidas e comparações de desempenhos práticos</li>
+        <li>Análise e apresentação de dados</li>
+      </ol>
 
-        <h2>Etapas</h2>
+      <h2>Etapas</h2>
 
-        <h3>Implementação</h3>
-        <ul>
-            <li>Implementação de seis metodos de ordenação.</li>
-            <li>Mesma estrutura de dados (array de inteiros) para todos os métodos.</li>
-            <li>Alguns algoritimos posssuem metodologias recursivas.</li>
-        </ul>
+      <h3>Implementação</h3>
+      <ul>
+        <li>Implementação de seis metodos de ordenação.</li>
+        <li>
+          Mesma estrutura de dados (array de inteiros) para todos os métodos.
+        </li>
+        <li>Alguns algoritimos posssuem metodologias recursivas.</li>
+      </ul>
 
-        <h3>Testes de Performance</h3>
-        <ul>
-            <li>Foram gerados conjuntos de dados aleatórios.</li>
-            <li>Testes de cada algoritmo com diferentes tamanhos variando de 1 a 100.000 elementos.</li>
-            <li>Foi usada a biblioteca <code>time.h</code> para medir o tempo de execução</li>
-        </ul>
+      <h3>Testes de Performance</h3>
+      <ul>
+        <li>Foram gerados conjuntos de dados aleatórios.</li>
+        <li>
+          Testes de cada algoritmo com diferentes tamanhos variando de 1 a
+          100.000 elementos.
+        </li>
+        <li>
+          Foi usada a biblioteca <code>time.h</code> para medir o tempo de
+          execução
+        </li>
+      </ul>
 
-        <h3>Análise Comparativa</h3>
-        <ul>
-            <li>Foram comparados desempenhos dos algoritmos para diferentes tamanhos de entrada.</li>
-            <li>Analise como os tempos de execução crescem em relação ao tamanho da entrada.</li>
-            <li>Foram feitas identificações em quais situações cada algoritmo se sai melhor.</li>
-        </ul>
+      <h3>Análise Comparativa</h3>
+      <ul>
+        <li>
+          Foram comparados desempenhos dos algoritmos para diferentes tamanhos
+          de entrada.
+        </li>
+        <li>
+          Analise como os tempos de execução crescem em relação ao tamanho da
+          entrada.
+        </li>
+        <li>
+          Foram feitas identificações em quais situações cada algoritmo se sai
+          melhor.
+        </li>
+      </ul>
 
-        <h3>Visualização de Dados</h3>
-        <ul>
-            <li>Foram criados gráficos comparando o desempenho dos algoritmos.</li>
-            <li>Sugestão: use uma ferramenta como GNU Plot, Python (matplotlib) ou R.</li>
-        </ul>
+      <h2>Algoritmos que foram implementados</h2>
+      <ol>
+        <li>
+          <span class="algoritmo">Selection Sort</span>: Um algoritmo simples
+          que repetidamente seleciona o menor elemento restante.
+        </li>
+        <li>
+          <span class="algoritmo">Insertion Sort</span>: Constrói a lista final
+          um item de cada vez, como organizar cartas de baralho na mão.
+        </li>
+        <li>
+          <span class="algoritmo">Bubble Sort</span>: Compara pares adjacentes e
+          os troca se estiverem fora de ordem.
+        </li>
+        <li>
+          <span class="algoritmo recursive">Merge Sort</span>: Um algoritmo
+          eficiente que divide a lista, ordena as partes e depois as mescla.
+        </li>
+        <li>
+          <span class="algoritmo recursive">Quick Sort</span>: Um algoritmo
+          rápido que usa a estratégia de dividir e conquistar.
+        </li>
+        <li>
+          <span class="algoritmo recursive">Heap Sort</span>: Utiliza uma
+          estrutura de dados chamada heap para ordenar os elementos.
+        </li>
+      </ol>
 
-        <h2>Algoritmos que foram implementados</h2>
-        <ol>
-            <li><span class="algoritmo">Selection Sort</span>: Um algoritmo simples que repetidamente seleciona o menor
-                elemento restante.</li>
-            <li><span class="algoritmo">Insertion Sort</span>: Constrói a lista final um item de cada vez, como
-                organizar cartas de baralho na mão.</li>
-            <li><span class="algoritmo">Bubble Sort</span>: Compara pares adjacentes e os troca se estiverem fora de
-                ordem.</li>
-            <li><span class="algoritmo recursive">Merge Sort</span>: Um algoritmo eficiente que divide a lista, ordena
-                as partes e depois as mescla.</li>
-            <li><span class="algoritmo recursive">Quick Sort</span>: Um algoritmo rápido que usa a estratégia de dividir
-                e conquistar.</li>
-            <li><span class="algoritmo recursive">Heap Sort</span>: Utiliza uma estrutura de dados chamada heap para
-                ordenar os elementos.</li>
-        </ol>
-
-        <h2>Selection Sort</h2>
-        <p>Para medir o tempo de execução, use o seguinte template:</p>
-        <pre><code>
+      <h2>Selection Sort</h2>
+      <p>
+        Funciona encontrando o menor (ou maior) elemento em um array e movendo-o
+        para sua posição correta. Em seguida, ele repete o processo para os
+        elementos restantes até que todo o array esteja ordenado.
+      </p>
+      <pre><code>
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
@@ -89,10 +125,28 @@ void selectionSort(int arr[], int n) {
     }
 }
 </code></pre>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> A simplicidade de implementação, sendo útil
+        para conjuntos pequenos de dados. Além disso, ele não requer memória
+        adicional, já que realiza a ordenação in-place.
+      </div>
 
-        <h2>Insertion Sort</h2>
-        <p>Para sortear números aleatórios, use o seguinte template:</p>
-        <pre><code>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> É um algoritmo ineficiente para grandes
+        conjuntos de dados devido à sua complexidade quadrática, tanto no melhor
+        quanto no pior caso. Outra desvantagem é que ele continua executando
+        mesmo que o array já esteja ordenado.
+      </div>
+
+      <h2>Insertion Sort</h2>
+      <p>
+        O Insertion Sort constrói a sequência ordenada elemento por elemento.
+        Ele percorre o array, pegando cada elemento e inserindo-o na posição
+        correta em relação aos elementos anteriores. Esse algoritmo é
+        particularmente vantajoso para arrays pequenos ou que já estejam
+        parcialmente ordenados, pois seu melhor caso tem complexidade.
+      </p>
+      <pre><code>
 void insertionSort(int arr[], int n) {
     for (int i = 1; i < n; i++) {
         int key = arr[i];
@@ -106,15 +160,19 @@ void insertionSort(int arr[], int n) {
     }
 }
 </code></pre>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> É um método estável, ou seja, mantém a ordem
+        relativa dos elementos iguais, e também ordena in-place.
+      </div>
 
-<div class="dica">
-    <strong>Vantagem:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
-    para os mais complexos.
-</div>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> Contudo, para arrays grandes e não
+        ordenados, sua complexidade no pior caso torna-o menos eficiente.
+      </div>
 
-<h2>Bubble Sort</h2>
-        <p>Para sortear números aleatórios, use o seguinte template:</p>
-        <pre><code>
+      <h2>Bubble Sort</h2>
+      <p>Compara elementos adjacentes e os troca, se necessário, movendo os maiores elementos para o final do array em cada passagem. Ele repete esse processo até que todo o array esteja ordenado.</p>
+      <pre><code>
 void bubbleSort(int arr[], int n) {
     int i, j, temp;
     for (i = 0; i < n - 1; i++) {
@@ -130,14 +188,17 @@ void bubbleSort(int arr[], int n) {
 }
 </code></pre>
 
-<div class="dica">
-    <strong>Vantagem:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
-    para os mais complexos.
-</div>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> Esse algoritmo é conhecido por sua simplicidade e por detectar se o array já está ordenado.
+      </div>
 
-<h2>Merge Sort</h2>
-        <p>Para sortear números aleatórios, use o seguinte template:</p>
-        <pre><code>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> no pior caso, ele tem alta complexidade, o que o torna muito lento para grandes conjuntos de dados. Além disso, ele realiza muitas trocas desnecessárias, o que reduz sua eficiência.
+      </div>
+
+      <h2>Merge Sort</h2>
+      <p>Divide o array em partes menores até que cada parte tenha apenas um elemento. Em seguida, combina essas partes de forma ordenada até reconstruir o array completo. Esse algoritmo é eficiente para grandes conjuntos de dados.</p>
+      <pre><code>
 void merge(int arr[], int left, int mid, int right) {
     int i, j, k;
     int n1 = mid - left + 1;
@@ -191,14 +252,17 @@ void mergeSort(int arr[], int left, int right) {
 }
 </code></pre>
 
-<div class="dica">
-    <strong>Vantagem:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
-    para os mais complexos.
-</div>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> É estável, o que significa que preserva a ordem relativa dos elementos iguais, e pode ser paralelizado devido à sua abordagem de divisão e conquista.
+      </div>
 
-<h2>Quick Sort</h2>
-        <p>Para sortear números aleatórios, use o seguinte template:</p>
-        <pre><code>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> E requer memória adicional para armazenar os subarrays temporários, tornando-o menos eficiente em termos de uso de espaço.
+      </div>
+
+      <h2>Quick Sort</h2>
+      <p>Seleciona um elemento como pivô e organiza o array em dois subconjuntos: os elementos menores e maiores que o pivô. Em seguida, aplica recursivamente o mesmo processo em cada subconjunto.</p>
+      <pre><code>
 void quicksort(int *arr, int low, int high)
 {
     int pivot, i, j, temp;
@@ -230,15 +294,17 @@ void quicksort(int *arr, int low, int high)
     }
 }
 </code></pre>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> Esse algoritmo é muito rápido na prática, com complexidade média e é eficiente para grandes volumes de dados. Além disso, ele utiliza memória de forma eficiente, pois é um método in-place.
+      </div>
 
-<div class="dica">
-    <strong>Vantagem:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
-    para os mais complexos.
-</div>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> No entanto, sua estabilidade depende de implementação específica, e no pior caso (quando as partições são muito desbalanceadas), sua complexidade pode ser maior. Uma boa escolha do pivô é essencial para evitar esse cenário.
+      </div>
 
-<h2>Heap Sort</h2>
-        <p>Para sortear números aleatórios, use o seguinte template:</p>
-        <pre><code>
+      <h2>Heap Sort</h2>
+      <p>Constrói uma estrutura de heap (máximo ou mínimo) a partir do array e, em seguida, extrai repetidamente o maior (ou menor) elemento para formar o array ordenado.</p>
+      <pre><code>
 void heapify(int arr[], int n, int i) {
 
     int largest = i; 
@@ -280,12 +346,13 @@ void heapSort(int arr[], int n) {
     }
 }
 </code></pre>
+      <div class="vantagem">
+        <strong>Vantagem:</strong> Ele garante uma complexidade média independentemente do estado inicial dos dados, o que é uma grande vantagem. Além disso, realiza a ordenação in-place, sem a necessidade de memória adicional.
+      </div>
 
-<div class="dica">
-    <strong>Vantagem:</strong> Comece com os algoritmos mais simples (Bubble, Selection, Insertion) antes de passar
-    para os mais complexos.
-</div>
+      <div class="desvantagem">
+        <strong>Desvantagem:</strong> Por outro lado, o Heap Sort não é estável e, na prática, pode ser um pouco mais lento que o Merge Sort ou o Quick Sort devido à sobrecarga de manipular a estrutura do heap.
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
