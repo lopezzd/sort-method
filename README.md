@@ -1,4 +1,4 @@
-# Metodos de Ordenação de Arrays
+# Metodos de Ordenação de Array
 
 >Projeto desenvolvido em conjunto. Foram seis metodos de ordenação desenvolvidos para fins de estudo.
 
